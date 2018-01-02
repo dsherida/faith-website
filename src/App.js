@@ -3,17 +3,17 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-import Head from "./Head";
+import Header from "./Header";
 import Body from "./Body";
-import Foot from "./Foot";
+import Footer from "./Footer";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Head />
+        <Header />
         <Body />
-        <Foot />
+        <Footer />
       </div>
     );
   }

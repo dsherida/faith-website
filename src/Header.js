@@ -17,7 +17,7 @@ const divStyle = {
   background: "#58402c"
 };
 
-export default class Head extends Component {
+export default class Header extends Component {
   render() {
     return (
       <div>
