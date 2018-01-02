@@ -1,9 +1,10 @@
+// @flow
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 // Component imports
-import Head from './components/head';
+import Head from './Head';
 
 class App extends Component {
   render() {
