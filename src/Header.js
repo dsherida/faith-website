@@ -32,8 +32,8 @@ export default class Header extends Component {
               <Navbar.Toggle />
             </Navbar.Header>
           </Grid>
-          <div style={divStyle} />
         </Navbar>
+        <div style={divStyle} />
       </div>
     );
   }
