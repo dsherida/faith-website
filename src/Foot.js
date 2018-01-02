@@ -5,7 +5,7 @@ export default class Head extends Component {
   render() {
     return (
       <div className="container">
-        <p>Faith, LLC</p>
+        <p>© 2018, Faith, LLC.</p>
       </div>
     );
   }

@@ -2,12 +2,17 @@
 import React, { Component } from "react";
 import { Grid } from "react-bootstrap";
 import { Jumbotron, Button } from "react-bootstrap";
+import "./App.css";
+
+const jumbotronStyle = {
+  background: "#FFF"
+};
 
 export default class Body extends Component {
   render() {
     return (
       <div>
-        <Jumbotron>
+        <Jumbotron style={jumbotronStyle}>
           <Grid>
             <h1>Faith</h1>
             <p>
