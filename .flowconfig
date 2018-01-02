@@ -7,5 +7,6 @@
 [lints]
 
 [options]
+"javascript.validate.enable": false 
 
 [strict]
