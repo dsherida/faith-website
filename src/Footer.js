@@ -1,20 +1,25 @@
 // @flow
 import React, { Component } from "react";
-import "./Utilities.css"
 
+import "./Utilities.css";
+import { ColorPrimary } from "./Colors";
 
 const footer = {
-  position: "absolute",
-  bottom: 0,
-  width: '100%'
-}
+  background: ColorPrimary,
+  padding: "20px"
+};
+
+const phantom = {
+  height: "auto"
+};
 
 export default class Footer extends Component {
-
   render() {
     return (
       <div style={footer} className="text-center fs-14">
-        <p className="text-opacity-50" >Harris Global Solutions, LLC. © 2018 </p>
+        <span className="text-opacity-50" style={phantom}>
+          Harris Global Solutions, LLC. © 2018{" "}
+        </span>
       </div>
     );
   }
