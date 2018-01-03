@@ -41,6 +41,10 @@
   font-size: 28px !important;
 }
 
+.fw-900 {
+  font-weight: 900 !important;
+}
+
 .text-opacity-50 {
   opacity: 0.5 !important;
 }
@@ -56,6 +60,14 @@
 
 .text-white {
   color: white;
+}
+
+.text-android-green {
+  color: #A4C639;
+}
+
+.text-apple-black {
+  color: black;
 }
 
 .text-gray {

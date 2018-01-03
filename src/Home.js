@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap"
 import Logo from './assets/logo.png'
+
+import fontawesome from '@fortawesome/fontawesome'
+import brands from '@fortawesome/fontawesome-free-brands'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+
 import "./App.css";
 import "./Utilities.css"
+
+fontawesome.library.add(brands)
 
 
 const faithLogo = {
@@ -23,12 +30,18 @@ export default class Home extends Component {
               </div>
               <span className="font-italic fs-28">Never overpay for cleaning</span>
             </Col>
-            <Col xs="12" lg="4" className="text-center d-flex align-items-center mt-5">
-              <div className="w-100">Summer 2018</div>
-              <div className="w-100">
-                <span className="d-block">Android</span>
-                <span className="d-block">Apple</span>
-              </div>
+            <Col xs="12" lg="4" className="text-center d-flex align-items-center justify-content-center mt-5">
+              <Row>
+                <Col xs="12">
+                  <div className="w-100 fw-900 mb-3">Summer 2018</div>
+                </Col>
+                <Col xs="12">
+                  <div className="d-flex justify-content-between mx-5 px-4">
+                      <span>Android <FontAwesomeIcon icon={["fab", "android"]} className="text-android-green" size="2x" /></span>
+                      <span>Apple <FontAwesomeIcon icon={["fab", "apple"]} className="text-apple-black" size="2x"/></span>
+                  </div>
+                </Col>
+              </Row>
             </Col>
           </Row>
           <Row>

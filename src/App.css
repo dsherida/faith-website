@@ -37,3 +37,16 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  z-index:0;
+  background-color: #d50099;
+  opacity: .7;
+}
