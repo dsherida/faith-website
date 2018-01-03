@@ -1,18 +1,8 @@
 // @flow
-import React, { Component } from "react";
-import { Grid } from "react-bootstrap";
-import {
-  Jumbotron,
-  Button,
-  FormGroup,
-  ControlLabel,
-  FormControl,
-  HelpBlock,
-  Form,
-  Col,
-  Image
-} from "react-bootstrap";
+import React, { Component, Image } from "react";
+import { Container, Row, Col } from "reactstrap"
 import "./App.css";
+import "./Utilities.css"
 
 const BgImage = require("./clean-house.jpeg");
 
@@ -59,39 +49,18 @@ export default class Body extends Component {
 
   render() {
     return (
-      <div>
-        <Jumbotron style={jumbotronStyle}>
-          <Image src={BgImage} style={fullscreenBackground} />
-          <Grid>
-            <h2 style={boldStyle}>Automate your cleaning</h2>
-            <Form horizontal onSubmit={this.onEmailSubmit}>
-              <FormGroup
-                controlId="formBasicText"
-                validationState={this.getValidationState()}
-              >
-                <Col sm={5}>
-                  <FormControl
-                    type="text"
-                    value={this.state.value}
-                    placeholder="Email address..."
-                    onChange={this.handleChange}
-                  />
-                </Col>
-                <Col sm={3}>
-                  <Button
-                    type="submit"
-                    bsStyle="success"
-                    href="#"
-                    onClick={this.onEmailSubmit}
-                  >
-                    Sign up for updates
-                  </Button>
-                </Col>
-              </FormGroup>
-            </Form>
-          </Grid>
-        </Jumbotron>
-      </div>
+      <Container>
+        <Row className="my-5">
+          <Col className="text-center">
+            Never overpay for cleaning
+          </Col>
+        </Row>
+        <Row>
+          <Col className="text-center mt-2">
+            <span className="fs-14">Faith is a mobile application that will revolutionize the cleaning industry like no other app has done before.</span>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }

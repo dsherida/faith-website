@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from "react";
-import { Navbar, Grid } from "react-bootstrap";
+import { Navbar, Nav, NavItem, NavLink } from "reactstrap";
 
 const navbarStyle = {
   background: "#FFF",
@@ -22,16 +22,14 @@ export default class Header extends Component {
     return (
       <div>
         <Navbar inverse fixedTop style={navbarStyle}>
-          <Grid>
-            <Navbar.Header>
-              <Navbar.Brand>
-                <a href="/" style={navbarMainTextStyle}>
-                  Faith
-                </a>
-              </Navbar.Brand>
-              <Navbar.Toggle />
-            </Navbar.Header>
-          </Grid>
+          <Nav className="ml-auto">
+            <NavItem>
+              <NavLink href="" className="">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/jobs">Jobs</NavLink>
+            </NavItem>
+          </Nav>
         </Navbar>
         <div style={divStyle} />
       </div>

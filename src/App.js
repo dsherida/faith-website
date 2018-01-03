@@ -10,7 +10,7 @@ import Footer from "./Footer";
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="h-100">
         <Header />
         <Body />
         <Footer />
