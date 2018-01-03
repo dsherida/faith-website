@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from "react";
 import { Navbar, Nav, NavItem, NavLink } from "reactstrap";
+import { Link } from "react-router-dom";
 
 const navbarStyle = {
   background: "#FFF",
@@ -24,10 +25,14 @@ export default class Header extends Component {
         <Navbar inverse fixedTop style={navbarStyle}>
           <Nav className="ml-auto">
             <NavItem>
-              <NavLink href="" className="">About</NavLink>
+              <NavLink>
+                <Link to="/">About</Link>
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/jobs">Jobs</NavLink>
+              <NavLink>
+                <Link to="/jobs">Jobs</Link>
+              </NavLink>
             </NavItem>
           </Nav>
         </Navbar>
