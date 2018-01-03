@@ -1,4 +1,6 @@
-html, body {
+html,
+body {
+  background-color: #d50099;
   color: white;
   height: 100%;
 }
@@ -28,8 +30,12 @@ html, body {
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .overlay:before{

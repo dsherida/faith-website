@@ -1,5 +1,12 @@
 /* utilties */
 
+/* variables */
+:root {
+  --color-primary: #d50099;
+  --gray-color: #d2d2d2;
+  --light-gray-color: #f9f9f9;
+}
+
 /* sizing utilities */
 .h-100 {
   height: 100% !important;
@@ -39,7 +46,16 @@
 }
 
 .text-opacity-50 {
-  opacity: .5 !important
+  opacity: 0.5 !important;
+}
+
+/* font colors */
+.text-color-primary {
+  color: var(--color-primary);
+}
+
+.text-black {
+  color: black;
 }
 
 .text-white {
@@ -52,4 +68,25 @@
 
 .text-apple-black {
   color: black;
+}
+
+.text-gray {
+  color: gray;
+}
+
+/* background colors */
+.background-white {
+  background: white;
+}
+
+.background-lightgray {
+  background: var(--light-gray-color);
+}
+
+/* borders */
+.border-gray {
+  border-color: var(--gray-color);
+  border-width: thin;
+  border-style: solid;
+  border-radius: 3px;
 }
