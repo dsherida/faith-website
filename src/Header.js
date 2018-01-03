@@ -5,6 +5,12 @@ import { Link } from "react-router-dom";
 
 import "./Navbar.css";
 
+const underlineStyle = {
+  backgroundColor: "white",
+  height: "2px",
+  width: "100%"
+};
+
 export default class Header extends Component {
   render() {
     return (
@@ -13,12 +19,22 @@ export default class Header extends Component {
           <Nav className="ml-auto">
             <NavItem>
               <NavLink>
-                <Link to="/" className="nav-link">About</Link>
+                <Link to="/" className="nav-link">
+                  About
+                </Link>
+                {window.location.hash === "#/" ? (
+                  <div style={underlineStyle} />
+                ) : null}
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/jobs" className="nav-link">Jobs</Link>
+                <Link to="/jobs" className="nav-link">
+                  Jobs
+                </Link>
+                {window.location.hash === "#/jobs" ? (
+                  <div style={underlineStyle} />
+                ) : null}
               </NavLink>
             </NavItem>
           </Nav>
