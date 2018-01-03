@@ -13,12 +13,12 @@ export default class Header extends Component {
           <Nav className="ml-auto">
             <NavItem>
               <NavLink>
-                <Link to="/">About</Link>
+                <Link to="/" className="nav-link">About</Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/jobs">Jobs</Link>
+                <Link to="/jobs" className="nav-link">Jobs</Link>
               </NavLink>
             </NavItem>
           </Nav>
