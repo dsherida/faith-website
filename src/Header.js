@@ -1,37 +1,22 @@
 // @flow
 import React, { Component } from "react";
 import { Navbar, Nav, NavItem, NavLink } from "reactstrap";
-
-const navbarStyle = {
-  background: "#FFF",
-  borderWidth: 0,
-  padding: 10
-};
-
-const navbarMainTextStyle = {
-  color: "#000"
-};
-
-const divStyle = {
-  height: 1,
-  background: "#58402c"
-};
+import "./Navbar.css";
 
 export default class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar inverse fixedTop style={navbarStyle}>
+        <Navbar inverse fixedTop className="p-3">
           <Nav className="ml-auto">
             <NavItem>
-              <NavLink href="" className="">About</NavLink>
+              <NavLink href="" className="text-white nav-link">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/jobs">Jobs</NavLink>
+              <NavLink href="/jobs" className="text-white nav-link">Jobs</NavLink>
             </NavItem>
           </Nav>
         </Navbar>
-        <div style={divStyle} />
       </div>
     );
   }

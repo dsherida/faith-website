@@ -1,26 +1,13 @@
 // @flow
-import React, { Component, Image } from "react";
+import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap"
+import Logo from './assets/logo.png'
 import "./App.css";
 import "./Utilities.css"
 
-const BgImage = require("./clean-house.jpeg");
-
-const jumbotronStyle = {
-  background: "#FFF0"
-};
-
-const fullscreenBackground = {
-  flex: 1,
-  position: "relative",
-  width: "100%",
-  height: null,
-  resizeMode: "cover"
-};
-
-const boldStyle = {
-  fontWeight: "bold"
-};
+const faithLogo = {
+  maxWidth: '250px'
+}
 
 export default class Body extends Component {
   constructor(props) {
@@ -51,13 +38,27 @@ export default class Body extends Component {
     return (
       <Container>
         <Row className="my-5">
+          <Col></Col>
           <Col className="text-center">
-            Never overpay for cleaning
+            <div>
+              <img style={faithLogo} className="img-fluid mb-3" src={Logo} alt="Faith Logo" />
+            </div>
+            <span className="font-italic fs-28">Never overpay for cleaning</span>
+          </Col>
+          <Col className="text-center d-flex align-items-center">
+            <div className="w-100">Summer 2018</div>
+            <div className="w-100">
+              <span className="d-block">Android</span>
+              <span className="d-block">Apple</span>
+            </div>
           </Col>
         </Row>
         <Row>
           <Col className="text-center mt-2">
-            <span className="fs-14">Faith is a mobile application that will revolutionize the cleaning industry like no other app has done before.</span>
+            <span className="fs-18">
+              Faith is a mobile application that will revolutionize the cleaning industry like no other app has done before.
+
+            </span>
           </Col>
         </Row>
       </Container>

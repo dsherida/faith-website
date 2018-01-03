@@ -1,5 +1,7 @@
 // @flow
 import React, { Component } from "react";
+import "./Utilities.css"
+
 
 const footer = {
   position: "absolute",
@@ -11,8 +13,8 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <div style={footer} className="text-center">
-        <p>© 2018, Faith, LLC.</p>
+      <div style={footer} className="text-center fs-14">
+        <p className="text-opacity-50" >Harris Global Solutions, LLC. © 2018 </p>
       </div>
     );
   }
