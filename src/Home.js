@@ -6,7 +6,6 @@ import AppBadges from './assets/app-badges.png'
 
 import fontawesome from '@fortawesome/fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
 import "./App.css";
 import "./Utilities.css"
@@ -44,11 +43,7 @@ export default class Home extends Component {
                   <div className="w-100 fw-900 mb-3">Summer 2018</div>
                 </Col>
                 <Col xs="12">
-                  <div className="d-flex justify-content-between mx-5 px-4">
-                      <img src={AppBadges} alt="" style={appBadgeStyle} />
-                      {/* <span><FontAwesomeIcon icon={["fab", "android"]} className="text-android-green" size="2x" />Google Play Store </span>
-                      <span><FontAwesomeIcon icon={["fab", "apple"]} className="text-apple-black" size="2x"/>Apple App Store </span> */}
-                  </div>
+                  <img src={AppBadges} alt="" style={appBadgeStyle} />
                 </Col>
               </Row>
             </Col>
@@ -57,7 +52,6 @@ export default class Home extends Component {
             <Col className="text-center mt-2">
               <span className="fs-18">
                 Faith is a mobile application that will revolutionize the cleaning industry like no other app has done before.
-
             </span>
             </Col>
           </Row>
