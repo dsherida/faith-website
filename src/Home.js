@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap"
+
 import Logo from './assets/logo.png'
+import AppBadges from './assets/app-badges.png'
 
 import fontawesome from '@fortawesome/fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
@@ -16,6 +18,12 @@ const faithLogo = {
   maxWidth: '250px'
 }
 
+const appBadgeStyle = {
+  height: "100px",
+  width: null,
+  display: "block",
+  margin: "auto"
+}
 
 export default class Home extends Component {
   render() {
@@ -37,8 +45,9 @@ export default class Home extends Component {
                 </Col>
                 <Col xs="12">
                   <div className="d-flex justify-content-between mx-5 px-4">
-                      <span>Android <FontAwesomeIcon icon={["fab", "android"]} className="text-android-green" size="2x" /></span>
-                      <span>Apple <FontAwesomeIcon icon={["fab", "apple"]} className="text-apple-black" size="2x"/></span>
+                      <img src={AppBadges} alt="" style={appBadgeStyle} />
+                      {/* <span><FontAwesomeIcon icon={["fab", "android"]} className="text-android-green" size="2x" />Google Play Store </span>
+                      <span><FontAwesomeIcon icon={["fab", "apple"]} className="text-apple-black" size="2x"/>Apple App Store </span> */}
                   </div>
                 </Col>
               </Row>
