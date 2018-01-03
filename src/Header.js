@@ -1,6 +1,8 @@
 // @flow
 import React, { Component } from "react";
 import { Navbar, Nav, NavItem, NavLink } from "reactstrap";
+import { Link } from "react-router-dom";
+
 import "./Navbar.css";
 
 export default class Header extends Component {
@@ -10,10 +12,14 @@ export default class Header extends Component {
         <Navbar inverse fixedTop className="p-3">
           <Nav className="ml-auto">
             <NavItem>
-              <NavLink href="" className="text-white nav-link">About</NavLink>
+              <NavLink>
+                <Link to="/">About</Link>
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/jobs" className="text-white nav-link">Jobs</NavLink>
+              <NavLink>
+                <Link to="/jobs">Jobs</Link>
+              </NavLink>
             </NavItem>
           </Nav>
         </Navbar>
