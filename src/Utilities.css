@@ -37,6 +37,10 @@
   font-size: 20px !important;
 }
 
+.fs-24 {
+  font-size: 24px !important;
+}
+
 .fs-28 {
   font-size: 28px !important;
 }
@@ -45,8 +49,13 @@
   font-weight: 900 !important;
 }
 
+/* opacity */
 .text-opacity-50 {
   opacity: 0.5 !important;
+}
+
+.text-opacity-80 {
+  opacity: 0.8 !important;
 }
 
 /* font colors */
@@ -63,7 +72,7 @@
 }
 
 .text-android-green {
-  color: #A4C639;
+  color: #a4c639;
 }
 
 .text-apple-black {
@@ -81,6 +90,10 @@
 
 .background-lightgray {
   background: var(--light-gray-color);
+}
+
+.background-primary {
+  background: var(--color-primary);
 }
 
 /* borders */

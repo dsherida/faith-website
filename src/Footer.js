@@ -5,22 +5,24 @@ import "./Utilities.css";
 import { ColorPrimary } from "./Colors";
 
 const footer = {
-  background: ColorPrimary,
+  background: "transparent",
   padding: "20px",
-  zIndex: 2,
-  opacity: .8
+  zIndex: 2
 };
 
 export default class Footer extends Component {
   render() {
     return (
-      <div style={footer} className="text-center fs-14">
-        <div>
-          Faith, LLC. ©2018{" "}
-        </div>
-        <div>
-          Tempe, AZ
-        </div>
+      <div
+        style={{
+          ...footer,
+          backgroundColor:
+            window.location.hash === "#/" ? "rgba(0, 0, 0, 0.0)" : ColorPrimary
+        }}
+        className="text-center fs-12"
+      >
+        <div>Faith, LLC. ©2018 </div>
+        <div>Tempe, AZ</div>
       </div>
     );
   }

@@ -5,11 +5,11 @@ import Job from "./Job";
 
 import "./Utilities.css";
 
-import Logo from "./assets/logo.png";
 import jobData from "./jobs.json";
 
-const faithLogo = {
-  maxWidth: "250px"
+const titleRowStyle = {
+  paddingTop: "125px",
+  paddingBottom: "125px"
 };
 
 const emailRowStyle = {
@@ -32,28 +32,18 @@ export default class Jobs extends Component {
   render() {
     return (
       <div>
-        <Container>
-          <Row className="my-5">
-            <Col />
-            <Col className="text-center">
-              <div>
-                <img
-                  style={faithLogo}
-                  className="img-fluid mb-3"
-                  src={Logo}
-                  alt="Faith Logo"
-                />
-              </div>
-              <Row>
-                <span className="fs-20">
-                  We're hiring the cream of the crop.
-                </span>
-                <p className="fs-16 w-100">See our positions below.</p>
-              </Row>
-            </Col>
-            <Col />
-          </Row>
-        </Container>
+        <Row className="background-primary" style={titleRowStyle}>
+          <Col xs="0" sm="2" />
+          <Col xs="12" sm="8" className="text-center">
+            <Row className="w-100">
+              <p className="fs-20 w-100">We're hiring the cream of the crop.</p>
+              <p className="fs-16 w-100 text-opacity-80">
+                See our positions below.
+              </p>
+            </Row>
+          </Col>
+          <Col xs="0" sm="2" />
+        </Row>
         <Row className="background-white" style={emailRowStyle}>
           <Col className="text-center">
             <p className="fs-16 w-100 text-gray">

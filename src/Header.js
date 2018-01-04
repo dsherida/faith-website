@@ -4,6 +4,7 @@ import { Navbar, Nav, NavItem } from "reactstrap";
 import { Link } from "react-router-dom";
 
 import "./Navbar.css";
+import { ColorPrimary } from "./Colors";
 
 const underlineStyle = {
   backgroundColor: "white",
@@ -13,17 +14,22 @@ const underlineStyle = {
 
 const NavbarStyle = {
   zIndex: 2
-}
+};
 
 export default class Header extends Component {
   render() {
     return (
-      <div>
+      <div
+        style={{
+          backgroundColor:
+            window.location.hash === "#/" ? "rgba(0, 0, 0, 0.0)" : ColorPrimary
+        }}
+      >
         <Navbar className="p-3" id="nav-bar" style={NavbarStyle}>
           <Nav className="ml-auto">
             <NavItem>
               <Link to="/" className="nav-link">
-                About
+                ABOUT
               </Link>
               {window.location.hash === "#/" ? (
                 <div style={underlineStyle} />
@@ -31,7 +37,7 @@ export default class Header extends Component {
             </NavItem>
             <NavItem>
               <Link to="/jobs" className="nav-link">
-                Jobs
+                JOBS
               </Link>
               {window.location.hash === "#/jobs" ? (
                 <div style={underlineStyle} />
