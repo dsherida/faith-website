@@ -1,10 +1,12 @@
 // @flow
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
+import Job from "./Job";
+
 import "./Utilities.css";
 
 import Logo from "./assets/logo.png";
-import { Link } from "react-router-dom";
+import jobData from "./jobs.json";
 
 const faithLogo = {
   maxWidth: "250px"
@@ -23,12 +25,7 @@ const emailTextStyle = {
 
 const jobsRowStyle = {
   paddingTop: "40px",
-  paddingLeft: "40px",
-  paddingRight: "40px"
-};
-
-const lastJobRowStyle = {
-  padding: "40px"
+  paddingBottom: "40px",
 };
 
 export default class Jobs extends Component {
@@ -70,78 +67,17 @@ export default class Jobs extends Component {
                   className="background-lightgray fs-20 w-100 text-black border-gray"
                   style={emailTextStyle}
                 >
-                  jobs@harrisglobalsolutions.com
+                  jobs@faithcleaningservice.com
                 </p>
               </Col>
               <Col className="col-sm-3" />
             </Row>
           </Col>
         </Row>
-        <Row className="background-lightgray" style={jobsRowStyle}>
-          <Col className="col-sm-2" />
-          <Col className="col-sm-8 mt-2 text-black">
-            <p className="fs-20">Senior Full Stack Developer</p>
-            <p className="fs-16">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              ante dolor, malesuada ac semper hendrerit, ultrices at est. Sed
-              efficitur lorem nec dolor suscipit, at viverra neque feugiat.
-              Donec vitae commodo quam. Duis tincidunt turpis eu ipsum maximus,
-              eget ornare sem sagittis. Phasellus venenatis consectetur ex id
-              aliquet. Aliquam erat volutpat. Mauris fermentum vestibulum
-              rhoncus. Praesent vel lorem quis magna ornare egestas sed eu ante.
-            </p>
-            <Link
-              className="text-color-primary"
-              to="/senior-full-stack-developer"
-            >
-              See more
-            </Link>
-          </Col>
-          <Col className="col-sm-2" />
-        </Row>
-        <Row className="background-lightgray" style={jobsRowStyle}>
-          <Col className="col-sm-2" />
-          <Col className="col-sm-8 mt-2 text-black">
-            <p className="fs-20">Senior Full Stack Developer</p>
-            <p className="fs-16">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              ante dolor, malesuada ac semper hendrerit, ultrices at est. Sed
-              efficitur lorem nec dolor suscipit, at viverra neque feugiat.
-              Donec vitae commodo quam. Duis tincidunt turpis eu ipsum maximus,
-              eget ornare sem sagittis. Phasellus venenatis consectetur ex id
-              aliquet. Aliquam erat volutpat. Mauris fermentum vestibulum
-              rhoncus. Praesent vel lorem quis magna ornare egestas sed eu ante.
-            </p>
-            <Link
-              className="text-color-primary"
-              to="/senior-full-stack-developer"
-            >
-              See more
-            </Link>
-          </Col>
-          <Col className="col-sm-2" />
-        </Row>
-        <Row className="background-lightgray" style={lastJobRowStyle}>
-          <Col className="col-sm-2" />
-          <Col className="col-sm-8 mt-2 text-black">
-            <p className="fs-20">Senior Full Stack Developer</p>
-            <p className="fs-16">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              ante dolor, malesuada ac semper hendrerit, ultrices at est. Sed
-              efficitur lorem nec dolor suscipit, at viverra neque feugiat.
-              Donec vitae commodo quam. Duis tincidunt turpis eu ipsum maximus,
-              eget ornare sem sagittis. Phasellus venenatis consectetur ex id
-              aliquet. Aliquam erat volutpat. Mauris fermentum vestibulum
-              rhoncus. Praesent vel lorem quis magna ornare egestas sed eu ante.
-            </p>
-            <Link
-              className="text-color-primary"
-              to="/senior-full-stack-developer"
-            >
-              See more
-            </Link>
-          </Col>
-          <Col className="col-sm-2" />
+        <Row>
+          <div className="background-lightgray" style={jobsRowStyle}>
+            {jobData.jobs.map(job => <Job job={job} />)}
+          </div>
         </Row>
       </div>
     );

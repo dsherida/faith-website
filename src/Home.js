@@ -12,7 +12,6 @@ import "./Utilities.css"
 
 fontawesome.library.add(brands)
 
-
 const faithLogo = {
   maxWidth: '250px'
 }
