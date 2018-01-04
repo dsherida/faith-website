@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from "react";
-import { Navbar, Nav, NavItem, NavLink } from "reactstrap";
+import { Navbar, Nav, NavItem } from "reactstrap";
 import { Link } from "react-router-dom";
 
 import "./Navbar.css";
@@ -11,31 +11,31 @@ const underlineStyle = {
   width: "100%"
 };
 
+const NavbarStyle = {
+  zIndex: 2
+}
+
 export default class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar inverse fixedTop className="p-3">
+        <Navbar className="p-3" id="nav-bar" style={NavbarStyle}>
           <Nav className="ml-auto">
             <NavItem>
-              <NavLink>
-                <Link to="/" className="nav-link">
-                  About
-                </Link>
-                {window.location.hash === "#/" ? (
-                  <div style={underlineStyle} />
-                ) : null}
-              </NavLink>
+              <Link to="/" className="nav-link">
+                About
+              </Link>
+              {window.location.hash === "#/" ? (
+                <div style={underlineStyle} />
+              ) : null}
             </NavItem>
             <NavItem>
-              <NavLink>
-                <Link to="/jobs" className="nav-link">
-                  Jobs
-                </Link>
-                {window.location.hash === "#/jobs" ? (
-                  <div style={underlineStyle} />
-                ) : null}
-              </NavLink>
+              <Link to="/jobs" className="nav-link">
+                Jobs
+              </Link>
+              {window.location.hash === "#/jobs" ? (
+                <div style={underlineStyle} />
+              ) : null}
             </NavItem>
           </Nav>
         </Navbar>

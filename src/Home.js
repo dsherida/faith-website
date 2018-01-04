@@ -27,6 +27,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="h-100">
+        <div className="overlay"/>
         <Container>
           <Row className="my-5">
             <Col xs="12" lg="4"></Col>

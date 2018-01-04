@@ -76,7 +76,7 @@ export default class Jobs extends Component {
         </Row>
         <Row>
           <div className="background-lightgray" style={jobsRowStyle}>
-            {jobData.jobs.map(job => <Job job={job} />)}
+            {jobData.jobs.map((job, idx) => <Job job={job} key={idx} />)}
           </div>
         </Row>
       </div>
