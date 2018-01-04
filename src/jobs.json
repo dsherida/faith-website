@@ -17,7 +17,16 @@
             ]
         },
         {
-            "name": "Senior Graphic Designer",
+            "name": "Senior Product Manager",
+            "location": "Remote",
+            "salary": "$150/hr",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante dolor, malesuada ac semper hendrerit, ultrices at est. Sed efficitur lorem nec dolor suscipit, at viverra neque feugiat. Donec vitae commodo quam. Duis tincidunt turpis eu ipsum maximus, eget ornare sem sagittis. Phasellus venenatis consectetur ex id aliquet. Aliquam erat volutpat. Mauris fermentum vestibulum rhoncus. Praesent vel lorem quis magna ornare egestas sed eu ante.",
+            "skills": [
+                "organization"
+            ]
+        },
+        {
+            "name": "Senior UI/UX Designer",
             "location": "Remote",
             "salary": "$100/hr",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante dolor, malesuada ac semper hendrerit, ultrices at est. Sed efficitur lorem nec dolor suscipit, at viverra neque feugiat. Donec vitae commodo quam. Duis tincidunt turpis eu ipsum maximus, eget ornare sem sagittis. Phasellus venenatis consectetur ex id aliquet. Aliquam erat volutpat. Mauris fermentum vestibulum rhoncus. Praesent vel lorem quis magna ornare egestas sed eu ante.",
@@ -26,12 +35,12 @@
             ]
         },
         {
-            "name": "Senior Product Manager",
+            "name": "Senior QA Automation Engineer",
             "location": "Remote",
-            "salary": "$150/hr",
+            "salary": "$100/hr",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante dolor, malesuada ac semper hendrerit, ultrices at est. Sed efficitur lorem nec dolor suscipit, at viverra neque feugiat. Donec vitae commodo quam. Duis tincidunt turpis eu ipsum maximus, eget ornare sem sagittis. Phasellus venenatis consectetur ex id aliquet. Aliquam erat volutpat. Mauris fermentum vestibulum rhoncus. Praesent vel lorem quis magna ornare egestas sed eu ante.",
             "skills": [
-                "organization"
+                "Automation"
             ]
         }
     ]
