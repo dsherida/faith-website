@@ -31,8 +31,8 @@ export default class Job extends Component {
 
     return (
       <Row className="background-lightgray">
-        <Col xs="2" sm="3" />
-        <Col xs="8" sm="6" className="mt-2 text-black">
+        <Col xs="1" sm="2" />
+        <Col xs="10" sm="8" className="mt-2 text-black">
           <div className="fs-20">{this.state.job.name}</div>
           <div className="fs-16 text-gray">
             {this.state.job.location}, {this.state.job.salary}
@@ -59,7 +59,9 @@ export default class Job extends Component {
               ))}
               <p style={paddingTopStyle10px}>
                 Apply now by sending your resume and cover letter to&nbsp;
-                <a href="mailto:jobs@faithcleaningservice.com" target="_top">Faith Talent Acquisition.</a>
+                <a href="mailto:jobs@faithcleaningservice.com" target="_top">
+                  Faith Talent Acquisition.
+                </a>
               </p>
               <Button
                 color="link"
@@ -72,7 +74,7 @@ export default class Job extends Component {
             </div>
           )}
         </Col>
-        <Col xs="2" sm="3" />
+        <Col xs="1" sm="2" />
       </Row>
     );
   }

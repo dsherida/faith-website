@@ -25,7 +25,7 @@ const emailTextStyle = {
 
 const jobsRowStyle = {
   paddingTop: "40px",
-  paddingBottom: "40px",
+  paddingBottom: "40px"
 };
 
 export default class Jobs extends Component {
@@ -46,9 +46,9 @@ export default class Jobs extends Component {
               </div>
               <Row>
                 <span className="fs-20">
-                  We're looking to hire the cream of the crop.
+                  We're hiring the cream of the crop.
                 </span>
-                <p className="fs-16 w-100">See all our positions below.</p>
+                <p className="fs-16 w-100">See our positions below.</p>
               </Row>
             </Col>
             <Col />
@@ -61,16 +61,16 @@ export default class Jobs extends Component {
             </p>
             <p />
             <Row>
-              <Col className="col-sm-3" />
-              <Col className="col-sm-6">
+              <Col xs="0" sm="2" />
+              <Col xs="12" sm="8">
                 <p
-                  className="background-lightgray fs-20 w-100 text-black border-gray"
+                  className="background-lightgray fs-20 text-black border-gray"
                   style={emailTextStyle}
                 >
                   jobs@faithcleaningservice.com
                 </p>
               </Col>
-              <Col className="col-sm-3" />
+              <Col xs="0" sm="2" />
             </Row>
           </Col>
         </Row>
