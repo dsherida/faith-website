@@ -9,17 +9,16 @@ const footer = {
   padding: "20px"
 };
 
-const phantom = {
-  height: "auto"
-};
-
 export default class Footer extends Component {
   render() {
     return (
-      <div style={footer} className="text-center fs-14">
-        <span className="text-opacity-50" style={phantom}>
-          Harris Global Solutions, LLC. © 2018{" "}
-        </span>
+      <div style={footer} className="text-center fs-14 text-opacity-50">
+        <div>
+          Faith, LLC. ©2018{" "}
+        </div>
+        <div>
+          Tempe, AZ
+        </div>
       </div>
     );
   }
