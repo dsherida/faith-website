@@ -6,13 +6,15 @@ import { ColorPrimary } from "./Colors";
 
 const footer = {
   background: ColorPrimary,
-  padding: "20px"
+  padding: "20px",
+  zIndex: 2,
+  opacity: .8
 };
 
 export default class Footer extends Component {
   render() {
     return (
-      <div style={footer} className="text-center fs-14 text-opacity-50">
+      <div style={footer} className="text-center fs-14">
         <div>
           Faith, LLC. ©2018{" "}
         </div>

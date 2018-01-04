@@ -11,13 +11,15 @@ class App extends Component {
   render() {
     return (
       <HashRouter basename="/">
-        <div>
+        <div id="App-main">
           {/* Header */}
           <Header />
 
           {/* Routes */}
-          <Route exact path="/" component={Home} />
-          <Route path="/jobs" component={Jobs} />
+          <div id="App-content">
+            <Route exact path="/" component={Home} />
+            <Route path="/jobs" component={Jobs} />
+          </div>
 
           {/* Footer */}
           <Footer />
