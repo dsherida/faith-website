@@ -31,7 +31,7 @@ const jobsRowStyle = {
 export default class Jobs extends Component {
   render() {
     return (
-      <div>
+      <Container fluid>
         <Row className="background-primary" style={titleRowStyle}>
           <Col xs="0" sm="2" />
           <Col xs="12" sm="8" className="text-center">
@@ -54,7 +54,13 @@ export default class Jobs extends Component {
               <Col xs="0" sm="2" />
               <Col xs="12" sm="8">
                 <p
-                  className="background-lightgray fs-20 text-black border-gray"
+                  className="background-lightgray fs-20 text-black border-gray d-none d-sm-block"
+                  style={emailTextStyle}
+                >
+                  jobs@faithcleaningservice.com
+                </p>
+                <p
+                  className="background-lightgray fs-16 text-black border-gray d-block d-sm-none"
                   style={emailTextStyle}
                 >
                   jobs@faithcleaningservice.com
@@ -64,12 +70,8 @@ export default class Jobs extends Component {
             </Row>
           </Col>
         </Row>
-        <Row>
-          <div className="background-lightgray" style={jobsRowStyle}>
-            {jobData.jobs.map((job, idx) => <Job job={job} key={idx} />)}
-          </div>
-        </Row>
-      </div>
+        {jobData.jobs.map((job, idx) => <Job job={job} key={idx} />)}
+      </Container>
     );
   }
 }
