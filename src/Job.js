@@ -8,6 +8,10 @@ const buttonStyle = {
   paddingTop: "10px"
 };
 
+const paddingTopStyle10px = {
+  paddingTop: "10px"
+};
+
 const paddingTopStyle20px = {
   paddingTop: "20px"
 };
@@ -42,7 +46,9 @@ export default class Job extends Component {
             <div className="fs-16 text-gray">
               {this.state.job.location}, {this.state.job.salary}
             </div>
-            <p className="fs-16">{this.state.job.description}</p>
+            <p className="fs-16" style={paddingTopStyle10px}>
+              {this.state.job.description}
+            </p>
             {!this.state.seeMoreClicked ? (
               <Button
                 color="link"
