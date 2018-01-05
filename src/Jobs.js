@@ -35,9 +35,9 @@ export default class Jobs extends Component {
         <Row className="background-primary" style={titleRowStyle}>
           <Col xs="0" sm="2" />
           <Col xs="12" sm="8" className="text-center">
-            <Row className="w-100">
+            <Row>
               <p className="fs-24 w-100">We're hiring the cream of the crop.</p>
-              <p className="fs-16 w-100 text-opacity-80">
+              <p className="fs-18 w-100 text-opacity-80">
                 See our positions below.
               </p>
             </Row>
@@ -51,8 +51,8 @@ export default class Jobs extends Component {
             </p>
             <p />
             <Row>
-              <Col xs="0" sm="2" />
-              <Col xs="12" sm="8">
+              <Col xs="0" sm="2" md="3" />
+              <Col xs="12" sm="8" md="6">
                 <p
                   className="background-lightgray fs-20 text-black border-gray d-none d-sm-block"
                   style={emailTextStyle}
@@ -66,7 +66,7 @@ export default class Jobs extends Component {
                   jobs@faithcleaningservice.com
                 </p>
               </Col>
-              <Col xs="0" sm="2" />
+              <Col xs="0" sm="2" md="3" />
             </Row>
           </Col>
         </Row>
