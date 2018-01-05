@@ -19,9 +19,9 @@ export default class Footer extends Component {
           backgroundColor:
             window.location.hash === "#/" ? "rgba(0, 0, 0, 0.0)" : ColorPrimary
         }}
-        className="text-center fs-12"
+        className="text-center fs-14"
       >
-        <div>Faith, LLC. ©2018 </div>
+        <div>©2018 Faith, LLC.</div>
         <div>Tempe, AZ</div>
       </div>
     );

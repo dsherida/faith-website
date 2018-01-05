@@ -1,16 +1,20 @@
 import React, { Component } from "react";
-import { Row, Col, Button } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 
 import "./Utilities.css";
 
 const buttonStyle = {
   paddingLeft: "0px",
-  paddingTop: "10px",
-  paddingBottom: "40px"
+  paddingTop: "10px"
 };
 
-const paddingTopStyle10px = {
+const paddingTopStyle20px = {
   paddingTop: "20px"
+};
+
+const paddingStyle = {
+  paddingTop: "20px",
+  paddingBottom: "20px"
 };
 
 export default class Job extends Component {
@@ -30,52 +34,52 @@ export default class Job extends Component {
     };
 
     return (
-      <Row className="background-lightgray">
-        <Col xs="1" sm="2" />
-        <Col xs="10" sm="8" className="mt-2 text-black">
-          <div className="fs-20">{this.state.job.name}</div>
-          <div className="fs-16 text-gray">
-            {this.state.job.location}, {this.state.job.salary}
-          </div>
-          <p className="fs-16" style={paddingTopStyle10px}>
-            {this.state.job.description}
-          </p>
-          {!this.state.seeMoreClicked ? (
-            <Button
-              color="link"
-              className="text-color-primary"
-              onClick={seeMoreButtonOnClick}
-              style={buttonStyle}
-            >
-              See more
-            </Button>
-          ) : (
-            <div>
-              <p className="fs-18">Skills and Requirements</p>
-              {this.state.job.skills.map(skill => (
-                <li>
-                  <i class="fa-li fa fa-square" /> {skill}
-                </li>
-              ))}
-              <p style={paddingTopStyle10px}>
-                Apply now by sending your resume and cover letter to&nbsp;
-                <a href="mailto:jobs@faithcleaningservice.com" target="_top">
-                  Faith Talent Acquisition.
-                </a>
-              </p>
+      <Container fluid style={paddingStyle}>
+        <Row>
+          <Col xs="1" sm="2" />
+          <Col xs="10" sm="8" className="mt-2 text-black">
+            <div className="fs-20">{this.state.job.name}</div>
+            <div className="fs-16 text-gray">
+              {this.state.job.location}, {this.state.job.salary}
+            </div>
+            <p className="fs-16">{this.state.job.description}</p>
+            {!this.state.seeMoreClicked ? (
               <Button
                 color="link"
-                className="text-gray"
+                className="text-color-primary"
                 onClick={seeMoreButtonOnClick}
                 style={buttonStyle}
               >
-                See less...
+                See more
               </Button>
-            </div>
-          )}
-        </Col>
-        <Col xs="1" sm="2" />
-      </Row>
+            ) : (
+              <div>
+                <p className="fs-18">Skills and Requirements</p>
+                {this.state.job.skills.map(skill => (
+                  <li>
+                    <i class="fa-li fa fa-square" /> {skill}
+                  </li>
+                ))}
+                <p style={paddingTopStyle20px}>
+                  Apply now by sending your resume and cover letter to&nbsp;
+                  <a href="mailto:jobs@faithcleaningservice.com" target="_top">
+                    Faith Talent Acquisition.
+                  </a>
+                </p>
+                <Button
+                  color="link"
+                  className="text-gray"
+                  onClick={seeMoreButtonOnClick}
+                  style={buttonStyle}
+                >
+                  See less...
+                </Button>
+              </div>
+            )}
+          </Col>
+          <Col xs="1" sm="2" />
+        </Row>
+      </Container>
     );
   }
 }

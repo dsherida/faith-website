@@ -36,7 +36,7 @@ export default class Jobs extends Component {
           <Col xs="0" sm="2" />
           <Col xs="12" sm="8" className="text-center">
             <Row className="w-100">
-              <p className="fs-20 w-100">We're hiring the cream of the crop.</p>
+              <p className="fs-24 w-100">We're hiring the cream of the crop.</p>
               <p className="fs-16 w-100 text-opacity-80">
                 See our positions below.
               </p>
@@ -70,7 +70,9 @@ export default class Jobs extends Component {
             </Row>
           </Col>
         </Row>
-        {jobData.jobs.map((job, idx) => <Job job={job} key={idx} />)}
+        <Row className="background-lightgray" style={jobsRowStyle}>
+          {jobData.jobs.map((job, idx) => <Job job={job} key={idx} />)}
+        </Row>
       </Container>
     );
   }
