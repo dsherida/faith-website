@@ -23,10 +23,21 @@ const appBadgeStyle = {
   margin: "auto"
 };
 
+const textShadowStyle = {
+  textShadow: "0px 0px 16px rgba(0, 0, 0, 0.75)"
+};
+
 export default class Home extends Component {
   render() {
     return (
-      <div className="h-100">
+      <div
+        className="h-100"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center"
+        }}
+      >
         <div className="overlay" />
         <Container>
           <Row className="my-5">
@@ -40,7 +51,9 @@ export default class Home extends Component {
                   alt="Faith Logo"
                 />
               </div>
-              <span className="fs-24">Never overpay for cleaning</span>
+              <span className="fs-28" style={textShadowStyle}>
+                Never overpay for cleaning
+              </span>
             </Col>
             <Col
               xs="12"
@@ -59,9 +72,9 @@ export default class Home extends Component {
           </Row>
           <Row>
             <Col className="text-center mt-2">
-              <span className="fs-18">
-                Faith is a mobile application that will revolutionize the
-                cleaning industry like no other app has done before.
+              <span className="fs-20" style={textShadowStyle}>
+                Faith is revolutionizing the cleaning industry like no app has
+                done before.
               </span>
             </Col>
           </Row>

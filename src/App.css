@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: #d50099;
+  background-color: #d40d9b;
   color: white;
   height: 100%;
 }
@@ -65,6 +65,6 @@ body {
   height: 100%;
   display: block;
   z-index: 0;
-  background-color: #d50099;
-  opacity: 0.7;
+  background-color: #d40d9b;
+  opacity: 0.66;
 }
