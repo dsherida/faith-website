@@ -6,6 +6,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Jobs from "./Jobs";
 import Footer from "./Footer";
+import EmailInput from "./EmailInput";
 
 class App extends Component {
   render() {
@@ -21,6 +22,8 @@ class App extends Component {
             <Route path="/jobs" component={Jobs} />
           </div>
 
+          {/* Email Input */}
+          <EmailInput />
           {/* Footer */}
           <Footer />
         </div>

@@ -1,16 +1,10 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
-
 import Logo from "./assets/logo.png";
 import AppBadges from "./assets/app-badges.png";
 
-import fontawesome from "@fortawesome/fontawesome";
-import brands from "@fortawesome/fontawesome-free-brands";
-
 import "./App.css";
 import "./Utilities.css";
-
-fontawesome.library.add(brands);
 
 const faithLogo = {
   maxWidth: "250px"

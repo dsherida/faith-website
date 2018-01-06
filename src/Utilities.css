@@ -88,6 +88,10 @@
   background: white;
 }
 
+.background-gray {
+  background: var(--gray-color);
+}
+
 .background-lightgray {
   background: var(--light-gray-color);
 }
@@ -102,4 +106,8 @@
   border-width: thin;
   border-style: solid;
   border-radius: 3px;
+}
+
+.z-index-2 {
+  z-index: 2 !important;
 }
