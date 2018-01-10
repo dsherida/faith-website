@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: #d40d9b;
+  /* background-color: #d40d9b; */
   color: white;
   height: 100%;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   content: " ";
   top: 0;
   left: 0;
