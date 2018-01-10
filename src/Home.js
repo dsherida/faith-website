@@ -13,18 +13,18 @@ import "./Utilities.css";
 fontawesome.library.add(brands);
 
 const faithLogo = {
-  maxWidth: "250px"
+  maxWidth: "350px"
 };
 
 const appBadgeStyle = {
-  height: "100px",
+  height: "150px",
   width: null,
   display: "block",
   margin: "auto"
 };
 
 const textShadowStyle = {
-  textShadow: "0px 0px 16px rgba(0, 0, 0, 0.75)"
+  textShadow: "0px 0px 12px rgba(0, 0, 0, 0.66)"
 };
 
 export default class Home extends Component {
@@ -41,8 +41,8 @@ export default class Home extends Component {
         <div className="overlay" />
         <Container>
           <Row className="my-5">
-            <Col xs="12" lg="4" />
-            <Col xs="12" lg="4" className="text-center">
+            <Col xs="12" lg="3" />
+            <Col xs="12" lg="6" className="text-center">
               <div>
                 <img
                   style={faithLogo}
@@ -57,12 +57,14 @@ export default class Home extends Component {
             </Col>
             <Col
               xs="12"
-              lg="4"
+              lg="3"
               className="text-center d-flex align-items-center justify-content-center mt-5"
             >
               <Row>
                 <Col xs="12">
-                  <div className="w-100 fw-900 mb-3">Summer 2018</div>
+                  <div className="w-100 fw-900 mb-3" style={textShadowStyle}>
+                    SUMMER 2018
+                  </div>
                 </Col>
                 <Col xs="12">
                   <img src={AppBadges} alt="" style={appBadgeStyle} />
