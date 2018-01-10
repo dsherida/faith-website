@@ -4,17 +4,8 @@ import { Container, Row, Col } from "reactstrap";
 import Logo from "./assets/logo.png";
 import AppBadges from "./assets/app-badges.png";
 
-import fontawesome from "@fortawesome/fontawesome";
-import brands from "@fortawesome/fontawesome-free-brands";
-
 import "./App.css";
 import "./Utilities.css";
-
-fontawesome.library.add(brands);
-
-const faithLogo = {
-  maxWidth: "350px"
-};
 
 const appBadgeStyle = {
   height: "150px",
@@ -41,11 +32,10 @@ export default class Home extends Component {
         <div className="overlay" />
         <Container>
           <Row className="my-5">
-            <Col xs="12" lg="3" />
-            <Col xs="12" lg="6" className="text-center">
+            <Col xs="2" lg="3" />
+            <Col xs="8" lg="6" className="text-center">
               <div>
                 <img
-                  style={faithLogo}
                   className="img-fluid mb-3"
                   src={Logo}
                   alt="Faith Logo"
