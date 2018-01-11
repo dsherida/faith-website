@@ -7,7 +7,11 @@ import { ColorPrimary, ColorSecondary } from "./Colors";
 const footer = {
   background: "linear-gradient(to left, " + ColorPrimary + "," + ColorSecondary + ")",
   padding: "10px",
-  zIndex: 2
+  zIndex: 2,
+  position: "absolute",
+  bottom: 0,
+  left: 0,
+  right: 0
 };
 
 export default class Footer extends Component {

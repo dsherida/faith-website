@@ -13,7 +13,10 @@ const underlineStyle = {
 };
 
 const NavbarStyle = {
-  zIndex: 2
+  zIndex: 2,
+  position: "absolute",
+  top: 0,
+  right: 0
 };
 
 export default class Header extends Component {
