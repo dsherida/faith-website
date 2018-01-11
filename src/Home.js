@@ -7,6 +7,21 @@ import AppBadges from "./assets/app-badges.png";
 import "./App.css";
 import "./Utilities.css";
 
+import BackgroundImage from "./assets/bg.png";
+
+const mainDivStyle = {
+  flex: "1",
+  display: "flex",
+  justifyContent: "center",
+  flexDirection: "column",
+  alignItems: "center",
+  backgroundImage: `url(${BackgroundImage})`,
+  backgroundPosition: "center center",
+  backgroundRepeat: "no-repeat",
+  backgroundAttachment: "fixed",
+  backgroundSize: "cover"
+}
+
 const appBadgeStyle = {
   height: "150px",
   width: null,
@@ -21,19 +36,12 @@ const textShadowStyle = {
 export default class Home extends Component {
   render() {
     return (
-      <div
-        className="h-100"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-      >
+      <div style={mainDivStyle} >
         <div className="overlay" />
         <Container>
           <Row className="my-5">
-            <Col xs="2" lg="3" />
-            <Col xs="8" lg="6" className="text-center">
+            <Col xs="2" lg="4" />
+            <Col xs="8" lg="4" className="text-center">
               <div>
                 <img
                   className="img-fluid mb-3"
@@ -41,13 +49,10 @@ export default class Home extends Component {
                   alt="Faith Logo"
                 />
               </div>
-              <span className="fs-28" style={textShadowStyle}>
-                Never overpay for cleaning
-              </span>
             </Col>
             <Col
               xs="12"
-              lg="3"
+              lg="4"
               className="text-center d-flex align-items-center justify-content-center mt-5"
             >
               <Row>
@@ -64,10 +69,13 @@ export default class Home extends Component {
           </Row>
           <Row>
             <Col className="text-center mt-2">
-              <span className="fs-20" style={textShadowStyle}>
+              <div className="fs-28" style={textShadowStyle}>
+                Never overpay for cleaning
+              </div>
+              <div className="fs-20" style={textShadowStyle}>
                 Faith is revolutionizing the cleaning industry like no app has
                 done before.
-              </span>
+              </div>
             </Col>
           </Row>
         </Container>

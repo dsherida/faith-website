@@ -93,7 +93,7 @@
 }
 
 .background-primary {
-  background: var(--color-primary);
+  background: linear-gradient(to left, #d40d9b, #7B00C1);
 }
 
 /* borders */

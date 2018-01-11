@@ -4,7 +4,7 @@ import { Navbar, Nav, NavItem } from "reactstrap";
 import { Link } from "react-router-dom";
 
 import "./Navbar.css";
-import { ColorPrimary } from "./Colors";
+import { ColorPrimary, ColorSecondary } from "./Colors";
 
 const underlineStyle = {
   backgroundColor: "white",
@@ -21,8 +21,8 @@ export default class Header extends Component {
     return (
       <div
         style={{
-          backgroundColor:
-            window.location.hash === "#/" ? "rgba(0, 0, 0, 0.0)" : ColorPrimary
+          background: 
+            window.location.hash === "#/" ? "rgba(0, 0, 0, 0.0)" : "linear-gradient(to left, " + ColorPrimary + "," + ColorSecondary + ")"
         }}
       >
         <Navbar className="p-3" id="nav-bar" style={NavbarStyle}>

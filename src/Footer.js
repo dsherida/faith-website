@@ -2,11 +2,11 @@
 import React, { Component } from "react";
 
 import "./Utilities.css";
-import { ColorPrimary } from "./Colors";
+import { ColorPrimary, ColorSecondary } from "./Colors";
 
 const footer = {
-  background: "transparent",
-  padding: "20px",
+  background: "linear-gradient(to left, " + ColorPrimary + "," + ColorSecondary + ")",
+  padding: "10px",
   zIndex: 2
 };
 
@@ -16,10 +16,10 @@ export default class Footer extends Component {
       <div
         style={{
           ...footer,
-          backgroundColor:
-            window.location.hash === "#/" ? "rgba(0, 0, 0, 0.0)" : ColorPrimary
+          background:
+            window.location.hash === "#/" ? "rgba(0, 0, 0, 0.0)" : "linear-gradient(to left, " + ColorPrimary + "," + ColorSecondary + ")"
         }}
-        className="text-center fs-14"
+        className="text-center fs-12"
       >
         <div>©2018 Faith, LLC.</div>
         <div>Tempe, AZ</div>

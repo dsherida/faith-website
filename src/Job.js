@@ -2,10 +2,15 @@ import React, { Component } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 
 import "./Utilities.css";
+import { ColorSecondary } from "./Colors";
 
 const buttonStyle = {
   paddingLeft: "0px",
   paddingTop: "10px"
+};
+
+const seeLessButtonStyle = {
+  color: ColorSecondary
 };
 
 const paddingTopStyle10px = {
@@ -40,8 +45,8 @@ export default class Job extends Component {
     return (
       <Container fluid style={paddingStyle}>
         <Row>
-          <Col xs="1" sm="2" />
-          <Col xs="10" sm="8" className="mt-2 text-black">
+          <Col xs="1" sm="3" />
+          <Col xs="10" sm="6" className="mt-2 text-black">
             <div className="fs-20">{this.state.job.name}</div>
             <div className="fs-16 text-gray">
               {this.state.job.location}, {this.state.job.salary}
@@ -56,7 +61,7 @@ export default class Job extends Component {
                 onClick={seeMoreButtonOnClick}
                 style={buttonStyle}
               >
-                See more
+                see more...
               </Button>
             ) : (
               <div>
@@ -74,16 +79,15 @@ export default class Job extends Component {
                 </p>
                 <Button
                   color="link"
-                  className="text-gray"
                   onClick={seeMoreButtonOnClick}
-                  style={buttonStyle}
+                  style={{...seeLessButtonStyle, ...buttonStyle}}
                 >
-                  See less...
+                  see less
                 </Button>
               </div>
             )}
           </Col>
-          <Col xs="1" sm="2" />
+          <Col xs="1" sm="3" />
         </Row>
       </Container>
     );
