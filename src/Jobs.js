@@ -7,11 +7,6 @@ import "./Utilities.css";
 
 import jobData from "./jobs.json";
 
-const titleRowStyle = {
-  paddingTop: "125px",
-  paddingBottom: "125px"
-};
-
 const emailRowStyle = {
   padding: "40px"
 };
@@ -32,9 +27,9 @@ export default class Jobs extends Component {
   render() {
     return (
       <Container fluid>
-        <Row className="background-primary" style={titleRowStyle}>
+        <Row className="background-primary py-5 px-3" id="title-row">
           <Col xs="0" sm="2" />
-          <Col xs="12" sm="8" className="text-center">
+          <Col xs="12" sm="8" className="text-center pt-5">
             <Row>
               <p className="fs-24 w-100">We're hiring the cream of the crop.</p>
               <p className="fs-18 w-100 text-opacity-80">
@@ -60,8 +55,7 @@ export default class Jobs extends Component {
                   jobs@faithcleaningservice.com
                 </p>
                 <p
-                  className="background-lightgray fs-16 text-black border-gray d-block d-sm-none"
-                  style={emailTextStyle}
+                  className="background-lightgray fs-16 text-black border-gray d-block d-sm-none w-100 py-2"
                 >
                   jobs@faithcleaningservice.com
                 </p>
