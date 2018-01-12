@@ -22,13 +22,6 @@ const mainDivStyle = {
   backgroundSize: "cover"
 }
 
-const appBadgeStyle = {
-  height: "150px",
-  width: null,
-  display: "block",
-  margin: "auto"
-};
-
 const textShadowStyle = {
   textShadow: "0px 0px 12px rgba(0, 0, 0, 0.66)"
 };
@@ -39,9 +32,9 @@ export default class Home extends Component {
       <div style={mainDivStyle} >
         <div className="overlay" />
         <Container>
-          <Row className="my-5">
-            <Col xs="2" lg="4" />
-            <Col xs="8" lg="4" className="text-center">
+          <Row className="my-md-5">
+            <Col xs="3" lg="4" />
+            <Col xs="6" lg="4" className="text-center">
               <div>
                 <img
                   className="img-fluid mb-3"
@@ -53,7 +46,7 @@ export default class Home extends Component {
             <Col
               xs="12"
               lg="4"
-              className="text-center d-flex align-items-center justify-content-center mt-5"
+              className="text-center d-flex align-items-center justify-content-center mt-md-5"
             >
               <Row>
                 <Col xs="12">
@@ -61,14 +54,15 @@ export default class Home extends Component {
                     SUMMER 2018
                   </div>
                 </Col>
-                <Col xs="12">
-                  <img src={AppBadges} alt="" style={appBadgeStyle} />
+                <Col xs="3" />
+                <Col xs="6">
+                  <img src={AppBadges} alt="" className="img-fluid" />
                 </Col>
               </Row>
             </Col>
           </Row>
           <Row>
-            <Col className="text-center mt-2">
+            <Col className="text-center mt-2 pb-3">
               <div className="fs-28" style={textShadowStyle}>
                 Never overpay for cleaning
               </div>

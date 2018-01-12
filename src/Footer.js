@@ -8,7 +8,7 @@ const footer = {
   background: "linear-gradient(to left, " + ColorPrimary + "," + ColorSecondary + ")",
   padding: "10px",
   zIndex: 2,
-  position: "absolute",
+  position: "fixed",
   bottom: 0,
   left: 0,
   right: 0
