@@ -1,7 +1,11 @@
 .nav-link {
   color: white;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
 }
 
 .nav-link:hover {
   color: white;
+  position: relative;
+  transform: translate(0, -10px);
 }
