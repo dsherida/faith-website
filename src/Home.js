@@ -63,7 +63,7 @@ export default class Home extends Component {
           </Row>
           <Row>
             <Col className="text-center mt-2 pb-3">
-              <div className="fs-28" style={textShadowStyle}>
+              <div className="fs-28 mb-2" style={textShadowStyle}>
                 Never overpay for cleaning
               </div>
               <div className="fs-20" style={textShadowStyle}>

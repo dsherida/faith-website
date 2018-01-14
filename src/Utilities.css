@@ -5,6 +5,7 @@
   --color-primary: #d40d9b;
   --gray-color: #d2d2d2;
   --light-gray-color: #f9f9f9;
+  --off-black-color: #495057;
 }
 
 /* sizing utilities */
@@ -49,6 +50,10 @@
   font-weight: 900 !important;
 }
 
+.fw-800 {
+  font-weight: 900 !important;
+}
+
 /* opacity */
 .text-opacity-50 {
   opacity: 0.5 !important;
@@ -64,7 +69,7 @@
 }
 
 .text-black {
-  color: black;
+  color: var(--off-black-color);
 }
 
 .text-white {

@@ -31,8 +31,8 @@ export default class Jobs extends Component {
           <Col xs="0" sm="2" />
           <Col xs="12" sm="8" className="text-center pt-5">
             <Row>
-              <p className="fs-24 w-100">We're hiring the cream of the crop.</p>
-              <p className="fs-18 w-100 text-opacity-80">
+              <p className="fs-24 w-100 fw-800">We're hiring the cream of the crop.</p>
+              <p className="fs-18 w-100">
                 See our positions below.
               </p>
             </Row>
