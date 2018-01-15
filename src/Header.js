@@ -24,28 +24,28 @@ export default class Header extends Component {
     return (
       <div
         style={{
-          background: 
+          background:
             window.location.hash === "#/" ? "rgba(0, 0, 0, 0.0)" : "linear-gradient(to left, " + ColorPrimary + "," + ColorSecondary + ")"
         }}
       >
         <Navbar className="p-3" id="nav-bar" style={NavbarStyle}>
           <Nav className="ml-auto">
-            <NavItem>
-              <Link to="/" className="nav-link">
-                ABOUT
-              </Link>
-              {window.location.hash === "#/" ? (
-                <div style={underlineStyle} />
-              ) : null}
-            </NavItem>
-            <NavItem>
-              <Link to="/jobs" className="nav-link">
-                JOBS
-              </Link>
-              {window.location.hash === "#/jobs" ? (
-                <div style={underlineStyle} />
-              ) : null}
-            </NavItem>
+            <Link to="/">
+              <NavItem>
+                <span className="nav-link">ABOUT</span>
+                {window.location.hash === "#/" ? (
+                  <div style={underlineStyle} />
+                ) : null}
+              </NavItem>
+            </Link>
+            <Link to="/jobs">
+              <NavItem>
+                <span className="nav-link">JOBS</span>
+                {window.location.hash === "#/jobs" ? (
+                  <div style={underlineStyle} />
+                ) : null}
+              </NavItem>
+            </Link>
           </Nav>
         </Navbar>
       </div>
