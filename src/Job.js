@@ -6,7 +6,6 @@ import { ColorSecondary } from "./Colors";
 
 const buttonStyle = {
   paddingLeft: "0px",
-  paddingTop: "10px"
 };
 
 const seeLessButtonStyle = {

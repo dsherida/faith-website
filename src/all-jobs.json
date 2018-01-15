@@ -1,6 +1,23 @@
 {
   "jobs": [
     {
+      "name": "Senior Full Stack Developer",
+      "location": "Remote",
+      "salary": "$150/hr",
+      "description":
+        "As a senior full-stack developer at Faith you will be pioneering development efforts on our flagship mobile application. As a natural leader of the team, others will seek you out for questions. This most likely isn’t your first time creating scalable, maintainable software so writing unit and integration tests must be second nature. If you seek a challenging opportunity with ample opportunity for career development at a fast paced startup while working from home, this is it!",
+      "skills": [
+        "5+ years experience writing full-stack applications",
+        "Held full-time remote job in the past",
+        "Startup experience",
+        "Leadership experience",
+        "Agile experience",
+        "Devops experience",
+        "Capable of writing unit and integration tests",
+        "Experience deploying to Apple App Store and Google Play Store"
+      ]
+    },
+    {
       "name": "Cleaner Instructor",
       "location": "Phoenix",
       "salary": "$35/hr",
