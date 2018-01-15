@@ -47,7 +47,7 @@ export default class Job extends Component {
         <Row>
           <Col xs="1" sm="3" />
           <Col xs="10" sm="6" className="mt-2 text-black">
-            <div className="fs-20 fw-800">{this.state.job.name}</div>
+            <div className="fs-18 fw-800">{this.state.job.name}</div>
             <div className="fs-16 text-gray">
               {this.state.job.location}, {this.state.job.salary}
             </div>

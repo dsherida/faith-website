@@ -33,8 +33,8 @@ export default class Home extends Component {
         <div className="overlay" />
         <Container>
           <Row className="my-md-5">
-            <Col xs="3" lg="4" />
-            <Col xs="6" lg="4" className="text-center">
+            <Col xs="2" md="3" lg="4" />
+            <Col xs="8" md="6" lg="4" className="text-center">
               <div>
                 <img
                   className="img-fluid mb-3"
@@ -50,8 +50,8 @@ export default class Home extends Component {
             >
               <Row>
                 <Col xs="12">
-                  <div className="w-100 fw-900 mb-3" style={textShadowStyle}>
-                    SUMMER 2018
+                  <div className="w-100 fw-800 mb-3" style={textShadowStyle}>
+                    THIS SUMMER
                   </div>
                 </Col>
                 <Col xs="3" />
@@ -63,12 +63,8 @@ export default class Home extends Component {
           </Row>
           <Row>
             <Col className="text-center mt-2 pb-3">
-              <div className="fs-28 mb-2" style={textShadowStyle}>
-                Never overpay for cleaning
-              </div>
-              <div className="fs-20" style={textShadowStyle}>
-                Faith is revolutionizing the cleaning industry like no app has
-                done before.
+              <div className="fs-28" style={textShadowStyle}>
+                Never overpay for house cleaning.
               </div>
             </Col>
           </Row>

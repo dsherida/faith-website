@@ -8,7 +8,7 @@ import WebFont from "webfontloader";
 
 WebFont.load({
   google: {
-    families: ["Titillium Web", "sans-serif"]
+    families: ["Asul", "sans-serif"]
   }
 });
 
