@@ -23,7 +23,7 @@ export default class Footer extends Component {
           className="text-center fs-12"
         >
           <div>©2018 Faith, LLC.</div>
-          <div>Tempe, AZ</div>
+          <div>(888) 845-2855</div>
         </div>
       );
     } else {
