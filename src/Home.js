@@ -7,7 +7,7 @@ import AppBadges from "./assets/app-badges.png";
 import "./App.css";
 import "./Utilities.css";
 
-import BackgroundImage from "./assets/bg.png";
+import BackgroundImage from "./assets/bg.jpg";
 
 const mainDivStyle = {
   flex: "1",
