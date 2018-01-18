@@ -2,14 +2,9 @@ import React, { Component } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 
 import "./Utilities.css";
-import { ColorSecondary } from "./Colors";
 
 const buttonStyle = {
   paddingLeft: "0px",
-};
-
-const seeLessButtonStyle = {
-  color: ColorSecondary
 };
 
 const paddingTopStyle10px = {
@@ -64,7 +59,7 @@ export default class Job extends Component {
               </Button>
             ) : (
               <div>
-                <p className="fs-18">Skills and Requirements</p>
+                <p className="fs-16">Skills and Requirements</p>
                 {this.state.job.skills.map(skill => (
                   <li>
                     <i class="fa-li fa fa-square" /> {skill}
@@ -77,9 +72,10 @@ export default class Job extends Component {
                   </a>
                 </p>
                 <Button
+                  className="text-gray text-italic"
                   color="link"
                   onClick={seeMoreButtonOnClick}
-                  style={{...seeLessButtonStyle, ...buttonStyle}}
+                  style={buttonStyle}
                 >
                   see less
                 </Button>

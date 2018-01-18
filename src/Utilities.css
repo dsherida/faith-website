@@ -2,7 +2,8 @@
 
 /* variables */
 :root {
-  --color-primary: #d40d9b;
+  --color-primary: #BD2791;
+  --color-secondary: #7B00C1;
   --gray-color: #d2d2d2;
   --light-gray-color: #f9f9f9;
   --off-black-color: #495057;
@@ -103,7 +104,7 @@
 }
 
 .background-primary {
-  background: linear-gradient(to left, #d40d9b, #7B00C1);
+  background: linear-gradient(to left, var(--color-primary), var(--color-secondary));
 }
 
 /* borders */

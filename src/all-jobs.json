@@ -1,15 +1,14 @@
 {
   "jobs": [
     {
-      "name": "Senior Full Stack Developer",
+      "name": "Full Stack Developer",
       "location": "Remote",
-      "salary": "$150/hr",
+      "salary": "$65/hr",
       "description":
-        "As a senior full-stack developer at Faith you will be pioneering development efforts on our flagship mobile application. As a natural leader of the team, others will seek you out for questions. This most likely isn’t your first time creating scalable, maintainable software so writing unit and integration tests must be second nature. If you seek a challenging opportunity with ample opportunity for career development at a fast paced startup while working from home, this is it!",
+        "As a senior full-stack developer at Faith you will be pioneering development efforts on our flagship mobile application. As a natural leader of the team, others will seek you out for questions. This most likely isn’t your first time creating scalable, maintainable software. Writing unit and integration tests must be second nature. If you seek a challenging opportunity with ample opportunity for career development while working from home, this is it!",
       "skills": [
-        "5+ years experience writing full-stack applications",
+        "5+ years experience writing full-stack applications preferred",
         "Held full-time remote job in the past",
-        "Startup experience",
         "Leadership experience",
         "Agile experience",
         "Devops experience",
@@ -30,14 +29,12 @@
       ]
     },
     {
-      "name": "Senior Product Manager",
+      "name": "Product Manager",
       "location": "Remote",
-      "salary": "$100/hr",
-      "description": "Our flagship mobile application needs a rockstar product manager to maintain a rock solid communication layer between sponsors, clients, and our development team. You will be responsible for setting priority on features and our release schedule.",
+      "salary": "$50/hr",
+      "description": "Our flagship mobile application needs a stellar product manager to facilitate a continuous feedback loop between our sponsors, clients, and in-house development team. You will be responsible for setting priority on features and maintaining a release schedule.",
       "skills": [
-        "5+ years product management experience",
-        "Technical background",
-        "Startup experience",
+        "5+ years product management experience preferred",
         "Has held a remote job in the past",
         "Great communication",
         "Organization",

@@ -6,7 +6,7 @@ import { ColorPrimary, ColorSecondary } from "./Colors";
 
 const footer = {
   background: "linear-gradient(to left, " + ColorPrimary + "," + ColorSecondary + ")",
-  padding: "10px",
+  padding: "5px",
   zIndex: 2
 };
 
