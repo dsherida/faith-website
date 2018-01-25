@@ -4,7 +4,7 @@ import { Container, Row, Col, Button } from "reactstrap";
 import "./Utilities.css";
 
 const buttonStyle = {
-  paddingLeft: "0px",
+  paddingLeft: "0px"
 };
 
 const paddingTopStyle10px = {
@@ -43,7 +43,13 @@ export default class Job extends Component {
           <Col xs="10" sm="6" className="mt-2 text-black">
             <div className="fs-18 fw-800">{this.state.job.name}</div>
             <div className="fs-16 text-gray">
-              {this.state.job.location}, {this.state.job.salary}
+              {(() => {
+                if (this.state.job.location === "") {
+                  return this.state.job.salary;
+                } else {
+                  return this.state.job.location + ", " + this.state.job.salary;
+                }
+              })()}
             </div>
             <p className="fs-16" style={paddingTopStyle10px}>
               {this.state.job.description}

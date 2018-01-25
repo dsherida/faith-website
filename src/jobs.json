@@ -2,9 +2,10 @@
   "jobs": [
     {
       "name": "Cleaner Instructor",
-      "location": "Phoenix",
+      "location": "",
       "salary": "$35/hr",
-      "description": "As a cleaner instructor at Faith you will be responsible for teaching new-hire cleaners everything they need to know about how to properly clean a home. Everything from the basics of cleaning, to customer service, and advanced time-saving techniques.",
+      "description":
+        "As a cleaner instructor at Faith you will be responsible for teaching new-hire cleaners everything they need to know about how to properly clean a home. Everything from the basics of cleaning, to customer service, and advanced time-saving techniques.",
       "skills": [
         "1+ years house cleaning experience",
         "1+ years instructor experience",
@@ -16,7 +17,8 @@
       "name": "Product Manager",
       "location": "Remote",
       "salary": "$50/hr",
-      "description": "Our flagship mobile application needs a stellar product manager to facilitate a continuous feedback loop between our sponsors, clients, and in-house development team. You will be responsible for setting priority on features and maintaining a release schedule.",
+      "description":
+        "Our flagship mobile application needs a stellar product manager to facilitate a continuous feedback loop between our sponsors, clients, and in-house development team. You will be responsible for setting priority on features and maintaining a release schedule.",
       "skills": [
         "5+ years product management experience preferred",
         "Has held a remote job in the past",
