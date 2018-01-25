@@ -2,8 +2,8 @@
 
 /* variables */
 :root {
-  --color-primary: #BD2791;
-  --color-secondary: #7B00C1;
+  --color-primary: #bd2791;
+  --color-secondary: #7b00c1;
   --gray-color: #d2d2d2;
   --light-gray-color: #f9f9f9;
   --off-black-color: #495057;
@@ -24,6 +24,10 @@
 }
 
 /* font utlitiles */
+.fs-10 {
+  font-size: 10px !important;
+}
+
 .fs-12 {
   font-size: 12px !important;
 }
@@ -104,7 +108,11 @@
 }
 
 .background-primary {
-  background: linear-gradient(to left, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(
+    to left,
+    var(--color-primary),
+    var(--color-secondary)
+  );
 }
 
 /* borders */
