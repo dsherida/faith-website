@@ -35,8 +35,7 @@ export default class Footer extends Component {
             Phoenix | Las Vegas | Los Angeles | San Francisco | San Diego |
             Seattle | Huston | Dallas | Austin | Atlanta | Manhattan |
             Philadelphia | New Jersey | Boston | Washington | Chicago | Miami |
-            Fort Lauderdale | Tampa Bay | Virgin Islands | London | Paris |
-            Spain | Dubai
+            Fort Lauderdale | Tampa Bay | London | Paris | Spain | Dubai
           </div>
         </div>
       );
